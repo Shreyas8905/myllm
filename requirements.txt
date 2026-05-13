@@ -1,6 +1,7 @@
 pydantic
-numpy 
-keras
-tensorflow
+numpy==1.23.5
+keras==2.10.0
+tensorflow==2.10.1
+protobuf==3.19.6
 transformers
 datasets
