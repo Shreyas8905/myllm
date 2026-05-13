@@ -11,7 +11,7 @@ class MyllmConfig(BaseModel):
     batch_size: int = Field(default=8)
     learning_rate: float = Field(default=3e-4)
     weight_decay: float = Field(default=0.01)
-    epochs: int = Field(default=1)
+    epochs: int = Field(default=50)
     repo_id: str = Field(default="Shreyas159/myLLM-120M")
 
 if __name__ == "__main__":

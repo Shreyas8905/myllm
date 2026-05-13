@@ -1,1 +1,4 @@
 .venv
+.venv-tf210
+checkpoints/
+weights/
