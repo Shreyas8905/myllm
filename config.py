@@ -15,6 +15,6 @@ class MyllmConfig(BaseModel):
     repo_id: str = Field(default="Shreyas159/myLLM-120M")
 
 if __name__ == "__main__":
-    config = MyLLMConfig()
+    config = MyllmConfig()
     print("Successfully initialized MyLLM Configuration!")
     print(f"Total Layers: {config.num_layers} | Embedding Dimension: {config.d_model}")
