@@ -21,7 +21,7 @@ The architecture utilizes a **Pre-Norm** configuration, where normalization is a
 MyLLM adopts **RMSNorm** as its primary normalization mechanism.
 
 - **Mathematical Definition**: RMSNorm regularizes the summed inputs to a neuron according to the root mean square:
-  $\bar{a}_i = \frac{a_i}{\sqrt{\frac{1}{n} \sum_{j=1}^n a_j^2 + \epsilon}} \cdot g_i$
+  $\bar{a}_i = \frac{a_i}{\sqrt{\frac{1}{n} \sum_{j=1}^n a_j^2 + \epsilon}} \cdot g_i $
 - **Practical Utility**: By removing the mean-centering and additive bias terms found in standard LayerNorm, RMSNorm reduces computational overhead while preserving the re-scaling invariance that stabilizes training. This implementation uses a small $\epsilon$ of $1e-6$ for numerical stability.
 
 ## 2. Attention Mechanism: Grouped-Query Attention (GQA)
