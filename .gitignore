@@ -2,3 +2,6 @@
 .venv-tf210
 checkpoints/
 weights/
+__pycache__/
+*.pyc
+.vscode/
